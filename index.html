@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <title>romiwaves</title>
     <style>
+        @font-face {
+            font-family: 'GowunBatang-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'GowunBatang-Regular';
+        }
+        
         H2 {
             text-align: center;
             margin-bottom: 50px;
@@ -34,41 +45,9 @@
         }
 
         .card_button {
-            border: none;
-            color: aliceblue;
+            color: whitesmoke;
+            font-size: 20px;
         }
-
-        .card_button:after {
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 100%;
-            top: 0;
-            left: 0;
-            direction: rtl;
-            z-index: -1;
-            box-shadow:
-                -7px -7px 20px 0px #fff9,
-                -4px -4px 5px 0px #fff9,
-                7px 7px 20px 0px #0002,
-                4px 4px 5px 0px #0001;
-            transition: all 0.3s ease;
-        }
-
-        .card_button:hover {
-            color:aliceblue;
-        }
-
-        .card_button:hover:after {
-            left:auto;
-            right: 0;
-            width: 100%;
-        }
-
-        .card_button:active {
-            top: 2px;
-        }
-
     </style>
 </head>
 
@@ -85,7 +64,7 @@
             <div class="card_title"> github </div>
             </p>
             <p>
-                <button class="card_button" value="let's go" type="button"
+                <button class="card_button" type="button" value="let's go"
                     onclick="window.open('https://github.com/romiwaves')">
             </p>
         </div>
@@ -96,7 +75,7 @@
             <div class="card_title"> blog </div>
             </p>
             <p>
-                <button class="card_button" value="let's go" type="button"
+                <button class="card_button" type="button" value="let's go"
                     onclick="window.open('https://romiwaves.tistory.com/')">
             </p>
         </div>
